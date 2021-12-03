@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "start": "yarn build && node ./build/index.js"
+  }
+}
