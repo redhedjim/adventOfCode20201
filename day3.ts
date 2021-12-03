@@ -29,7 +29,7 @@ const gammaRateDecimal = parseInt(gammaRate, 2);
 const epsilonRateDecimal = parseInt(epsilonRate, 2);
 const decimalPowerConsumption = gammaRateDecimal * epsilonRateDecimal;
 
-console.log(decimalPowerConsumption);
+console.log("Part 1 answer: ", decimalPowerConsumption);
 
 // part 2
 console.log("*** Part 2 ***");
@@ -37,6 +37,8 @@ console.log("*** Part 2 ***");
 // oxygen run
 let recalculatedData = data3;
 let oxygenGeneratorRating; // most common (keep 1)
+let co2ScrubberRating;     // least common (keep 0)
+
 for (let i = 0; i < diagnosticDataLength; i++) {
     const zeros = [];
     const ones = [];
@@ -64,10 +66,7 @@ for (let i = 0; i < diagnosticDataLength; i++) {
     }
 }
 
-console.log("part 1: ", oxygenGeneratorRating);
-
 // co2 run
-let co2ScrubberRating;     // least common (keep 0)
 recalculatedData = data3;
 
 for (let i = 0; i < diagnosticDataLength; i++) {
@@ -100,6 +99,5 @@ for (let i = 0; i < diagnosticDataLength; i++) {
 const oxygenRateDecimal = parseInt(oxygenGeneratorRating, 2);
 const co2RateDecimal = parseInt(co2ScrubberRating, 2);
 
-console.log(oxygenGeneratorRating);
-console.log(co2ScrubberRating);
-console.log(oxygenRateDecimal * co2RateDecimal);
+console.log("Part 2 answer: ", oxygenRateDecimal * co2RateDecimal);
+
