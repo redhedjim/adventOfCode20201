@@ -1,4 +1,4 @@
-export const data3 = [
+export const data = [
 "000011010001",
 "000001110100",
 "111100101010",

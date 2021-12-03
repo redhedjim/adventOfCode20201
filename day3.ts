@@ -1,15 +1,15 @@
-import { data3 } from "./data/day3";
+import { data } from "./data/day3";
 
 let gammaRate = ""; // most common
 let epsilonRate = ""; // least common
 
-const diagnosticDataLength = data3[0].length;
+const diagnosticDataLength = data[0].length;
 
 for (let i = 0; i < diagnosticDataLength; i++) {
     const zeros = [];
     const ones = [];
-    for (let j = 0; j < data3.length; j++) {
-        const currentBit = data3[j][i];
+    for (let j = 0; j < data.length; j++) {
+        const currentBit = data[j][i];
         if (currentBit === "0") {
             zeros.push(currentBit);
         } else {
@@ -35,7 +35,7 @@ console.log("Part 1 answer: ", decimalPowerConsumption);
 console.log("*** Part 2 ***");
 
 // oxygen run
-let recalculatedData = data3;
+let recalculatedData = data;
 let oxygenGeneratorRating; // most common (keep 1)
 let co2ScrubberRating;     // least common (keep 0)
 
@@ -67,7 +67,7 @@ for (let i = 0; i < diagnosticDataLength; i++) {
 }
 
 // co2 run
-recalculatedData = data3;
+recalculatedData = data;
 
 for (let i = 0; i < diagnosticDataLength; i++) {
     const zeros = [];

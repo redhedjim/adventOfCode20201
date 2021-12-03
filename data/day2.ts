@@ -1,4 +1,4 @@
-const data = [
+export const data = [
     "forward 8",
     "forward 9",
     "forward 9",

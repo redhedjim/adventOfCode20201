@@ -1,3 +1,5 @@
+import { data } from "./data/day2";
+
 let horizontal = 0;
 let vertical = 0;
 
